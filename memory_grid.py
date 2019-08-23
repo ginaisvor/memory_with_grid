@@ -1,6 +1,6 @@
 # implementation of card game - Memory with grid
 
-import simplegui
+import SimpleGUICS2Pygame.simpleguics2pygame as simplegui
 import random
 turns = 0
 
@@ -21,9 +21,6 @@ def new_game():
             grid[num].append(deck[i])
             i += 1
     exposed_grid = [[False for num in range(len(grid))]for cell in range(len(grid[num]))]
-    print deck
-    print grid
-    print exposed_grid
           
 def mouseclick(pos):
     global turns, flips, flip1, flip2, exposed_grid
